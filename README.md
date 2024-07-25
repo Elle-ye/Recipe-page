@@ -45,7 +45,7 @@ Struggled a bit with the Nutrition table, because I was trying to create that ta
 
 ### Useful resources
 
-- [Example resource 1](https://stackoverflow.com/questions/5306640/how-to-set-bullet-colors-in-ul-li-html-lists-via-css-without-using-any-images-or) - This helped me learn how to make to color of a bullet point different from its text.
+- [Stack Overflow](https://stackoverflow.com/questions/5306640/how-to-set-bullet-colors-in-ul-li-html-lists-via-css-without-using-any-images-or) - This helped me learn how to make to color of a bullet point different from its text.
 
 ## Author
 

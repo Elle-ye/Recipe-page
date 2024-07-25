@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Young-serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    --primary-color: hsl(0, 0%, 100%);
+    --clr-100: hsl(30, 54%, 90%);
+    --clr-150: hsl(30, 18%, 87%);
+    --clr-200: hsl(30, 10%, 34%);
+    --clr-250: hsl(24, 5%, 18%);
+    --clr-300: hsl(14, 45%, 36%);
+    --clr-350: hsl(332, 51%, 32%);
+    --clr-400: hsl(330, 100%, 98%);
+    --font-size-100: 16px;
+    --font-size-150: 20px;
+    --font-size-200: 1.5em;
+    --font-size-250: 2em;
+    --spacing-40: 4px;
+    --spacing-60: 6px;
+    --spacing-80: 8px;
+    --spacing-120: 12px;
+    --spacing-160: 16px;
+    --spacing-180: 18px;
+    --spacing-240: 24px;
+    --spacing-320: 32px;
+    --spacing-400: 40px;
+    --spacing-600: 60px;
+    --weight-400: 400;
+    --weight-600: 600;
+    --weight-700: 700
+}
+
+body {
+    width: 100vw;
+    margin: auto;
+    line-height: 1.5;
+    container-type: inline-size;
+    background-color: var(--clr-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header */
+.img-container {
+    width: 100%;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.rec-img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+/* Main section */
+main {
+    width: 100%;
+    background-color: var(--clr-400);
+    display: block;
+    margin: auto;
+}
+
+section {    
+    padding: var(--spacing-400) var(--spacing-320);
+    display: block;
+    margin: auto;
+
+}
+
+/* Primary Heading */
+.prim-head {
+    font-family: 'Young-serif';
+    font-size: var(--font-size-250);
+    font-weight: var(--weight-400);
+    color: var(--clr-250);
+    text-align: left;
+    line-height: 1;
+}
+
+.f-text {
+    font-family: 'Outfit';
+    font-size: var(--font-size-100);
+    color: var(--clr-200);
+    text-align:left;
+    padding-top: var(--spacing-240);
+    line-height: 1.5;
+}
+
+
+/* Preparation */
+.prep {
+    font-family: 'Outfit';
+    font-size: var(--font-size-150);
+    color: var(--clr-350);
+    text-align: left;
+    padding-top: 38px;
+    padding-bottom: 20px;
+    padding-left: var(--spacing-240);
+    font-weight: 600;
+}
+
+.p-list-container {
+    font-family: 'Outfit';
+    font-size: var(--font-size-100);
+    color: var(--clr-200);
+    text-align: left;
+    padding-left: var(--spacing-400);
+    padding-bottom: calc(var(--spacing-320) - var(--spacing-120));
+}
+
+.p-list-container li {
+    color: var(--clr-350);
+    padding-left: var(--spacing-160);
+    padding-bottom: var(--spacing-120);
+}
+
+.p-list-container li span {
+    color:  var(--clr-200);
+}
+
+
+/* INGREDIENTS */
+
+.heading {
+    font-family: 'Young-serif';
+    font-size: var(--font-size-200);
+    color: var(--clr-300);
+    padding-bottom: var(--spacing-240);
+    font-weight: var(--weight-200);
+    padding-top: var(--spacing-320);
+}
+
+.ing-list-container {
+    font-family: 'Outfit';
+    font-size: var(--font-size-100);
+    color: var(--clr-200);
+    text-align: left;
+    padding-bottom: calc(var(--spacing-320) - var(--spacing-120));
+    padding-left: var(--spacing-180);
+    border-bottom: 1px solid var(--clr-150);
+}
+
+.ing-list-container li {
+    color: var(--clr-300);
+    padding-left: var(--spacing-160);
+    padding-bottom: var(--spacing-120);
+}
+
+.ing-list-container li span {
+    color:  var(--clr-200);
+}
+
+/* INSTRUCTIONS */
+.ins-list-container {
+    font-family: 'Outfit';
+    font-size: var(--font-size-100);
+    color: var(--clr-200);
+    text-align: left;
+    padding-bottom: calc(var(--spacing-320) - var(--spacing-180));;
+    padding-left: var(--spacing-180);
+    border-bottom: 1px solid var(--clr-150);
+}
+
+.ins-list-container li {
+    color: var(--clr-300);
+    padding-left: var(--spacing-160);
+    padding-bottom: var(--spacing-180);
+    font-weight: var(--weight-600);
+}
+
+.ins-list-container li span {
+    color:  var(--clr-200);
+    font-weight: var(--weight-400);
+}
+
+
+/*Nutrition */
+.l-text {
+    font-family: 'Outfit';
+    font-size: var(--font-size-100);
+    color: var(--clr-200);
+    text-align: left;
+    line-height: 1.5;
+    padding-bottom: var(--spacing-160);
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+tbody {
+    border-bottom: 1px solid var(--clr-150);
+}
+
+th {
+    text-align: start;
+    padding-left: var(--spacing-320);
+    border-bottom: 1px solid var(--clr-150);
+    color: var(--clr-200);
+    font-family: 'Outfit';
+    font-size: var(--font-size-100); 
+    font-weight: normal;
+
+}
+
+td {
+    padding-bottom: var(--spacing-160);
+    padding-top: var(--spacing-180);
+    border-bottom: 1px solid var(--clr-150);
+    color: var(--clr-300);
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: var(--spacing-120);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@container  (width > 714px) {
+    main {
+        padding-top: var(--spacing-320);
+        width: 714px;
+        border-radius: 20px;
+    }
+
+    .img-container{
+        margin-bottom: 0;
+        width: 650px;
+        height: 280px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .rec-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 10px;
+    }
+    
+    /* section {
+        padding-top: 0;
+    } */
+
+}
